@@ -1,5 +1,5 @@
 function receitaslista(receita){
-    let verificar = document.getElementById("recipes1").style.display
+    let verificar = document.getElementById("recipes"+receita).style.display
 
     if(verificar==="none"){
         document.getElementById("recipes"+receita).style.display = "block";

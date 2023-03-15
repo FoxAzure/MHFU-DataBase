@@ -10,8 +10,19 @@ body{
     background-color: rgb(187, 164, 137);
     width: 100%;
 }
+
+footer{
+    padding: 40px;
+    background-color: rgb(114, 66, 3);
+    color: white;
+
+}
 .sescao-principal{
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
@@ -63,11 +74,13 @@ li.navegador{
     
     background-color: brown;
     color: white;
-    padding: 30px;
+    padding: 15px 25px;
     border: 3px solid rgb(110, 9, 9);
     border-radius: 25px;
-    font-size: 18pt;
+    font-size: 15pt;
     text-decoration: none;
+    width: 200px;
+    margin: 3px auto;
 }
 
 .button-kitchen{
@@ -86,6 +99,7 @@ li.navegador{
 .lista-receitas-felyne{
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 

@@ -37,6 +37,11 @@ nav{
     padding: 0 60px;
 }
 
+.lista-receitas-felyne{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 

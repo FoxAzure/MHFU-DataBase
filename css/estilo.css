@@ -3,18 +3,64 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    text-decoration: none;
 }
 
 body{
     background-color: rgb(187, 164, 137);
+    width: 100%;
+}
+.sescao-principal{
+    margin-bottom: 60px;
 }
 
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url("../galeria/backgrounds/banner-top.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-nav{
-    margin: 50px auto;
+h1{
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.753);
+}
+
+.menu{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+    text-align: center;
+    list-style: none;
+    text-indent: 0;
+    background-color: rgb(114, 66, 3);
+    color: white;
+    font-weight: bold;
+    
+}
+
+li.navegador{
+    
+    padding: 8px 10px;
+    margin: 0 2px;
+}
+
+.navegador a{
+    color: white;
 }
 
 .item-menu{
+    
     background-color: brown;
     color: white;
     padding: 30px;
@@ -51,6 +97,7 @@ nav{
 
 table{
     width: 90%;
+    max-width: 800px;
     margin: 25px auto;
     border-collapse: collapse;
     background-color: white;
@@ -62,7 +109,7 @@ ul{
 }
 li{
     text-align: left;
-    text-indent: 15px;
+    text-indent: 0px;
 }
 
 .receitas tr td{
@@ -84,6 +131,15 @@ thead th{
     border: 1px solid black;
     writing-mode: vertical-lr;
     padding: 10px 0;
+}
+
+@media only screen and (min-width: 800px){
+    .item td{
+        writing-mode: horizontal-tb;
+    }
+    thead th{
+        writing-mode: horizontal-tb;
+    }
 }
 
 .item2{

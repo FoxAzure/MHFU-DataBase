@@ -109,7 +109,7 @@ li.navegador{
 
 
 
-table{
+table.food{
     width: 90%;
     max-width: 800px;
     margin: 25px auto;
@@ -126,21 +126,21 @@ li{
     text-indent: 0px;
 }
 
-.receitas tr td{
+.food .receitas tr td{
     border: 1px solid black;
     padding: 5px;
     text-align: center;
 }
 
 
-.item td{
+.food .item td{
     border: 1px solid black;
     border-collapse: collapse;
     writing-mode: vertical-lr;
     text-align: center;
     padding: 10px 0;
 }
-thead th{
+.food thead th{
     background-color: aquamarine;
     border: 1px solid black;
     writing-mode: vertical-lr;
@@ -148,10 +148,10 @@ thead th{
 }
 
 @media only screen and (min-width: 800px){
-    .item td{
+    .food .item td{
         writing-mode: horizontal-tb;
     }
-    thead th{
+    .food thead th{
         writing-mode: horizontal-tb;
     }
 }

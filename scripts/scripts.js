@@ -9,3 +9,19 @@ function receitaslista(receita){
 
     
 }
+
+function questlista(star){
+    let verificar = document.getElementById("star"+star).style.display
+
+    if(verificar==="none"){
+        document.getElementById("star"+star).style.display = "block";
+    }else{
+        document.getElementById("star"+star).style.display = "none";
+    }
+
+    
+}
+
+function paginaquest(){
+    window.location.href = "./quest.html";
+}

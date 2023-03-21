@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4725812397660411"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/recipes.css">
     <title>MHFU Database - Felyne Kitchen</title>
 </head>
 <body>
@@ -30,29 +29,29 @@
         </ul>
     </nav>
 
-    <div class="anuncio pequeno">
-        <script type="text/javascript">
-            atOptions = { 		'key' : 'befc87fedcf770ff4247d587db5d54cc', 		'format' : 'iframe', 		'height' : 50, 		'width' : 320, 		'params' : {} 	}; 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/befc87fedcf770ff4247d587db5d54cc/invoke.js"></scr' + 'ipt>'); 
-        </script>
+    <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-felyne-bt">
+    <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-felyne-bt">
+    <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-felyne-bt">
+    <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-felyne-bt">
+    <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-felyne-bt">
+
+    <div class="new-felynes">
+        <button onclick="receitaslista(1)" class="new-felynes-bt" id="bt-recipes1">1</button>
+        <button onclick="receitaslista(2)" class="new-felynes-bt" id="bt-recipes2">2</button>
+        <button onclick="receitaslista(3)" class="new-felynes-bt" id="bt-recipes3">3</button>
+        <button onclick="receitaslista(4)" class="new-felynes-bt" id="bt-recipes4">4</button>
+        <button onclick="receitaslista(5)" class="new-felynes-bt" id="bt-recipes5">5</button>
     </div>
+
 
     <div class="lista-receitas-felyne">
         
-        <button onclick="receitaslista(1)" class="button-kitchen">
-            <h2>1 Felyne</h2>
-            <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-button">
-        </button>
         <div id="recipes1" style="display: none;">
-            <div class="anuncio pequeno">
-                <script type="text/javascript">
-                    atOptions = { 		'key' : 'befc87fedcf770ff4247d587db5d54cc', 		'format' : 'iframe', 		'height' : 50, 		'width' : 320, 		'params' : {} 	}; 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/befc87fedcf770ff4247d587db5d54cc/invoke.js"></scr' + 'ipt>'); 
-                </script>
-            </div>
-            <h2>Ingredientes</h2>
-            <table class="food">
+            <h2>1 Felyne</h2>
+            <table class="ingredientes-table">
                 <tbody class="receitas">
                     <tr>
-                        <td>Meat</td>
+                        <td class="tipo-receita">Meat</td>
                         <td>
                             <ul>
                                 <li>Meat Scrapps</li>
@@ -62,7 +61,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Veggies</td>
+                        <td class="tipo-receita">Veggies</td>
                         <td>
                             <ul>
                                 <li>Jungle Onnion</li>
@@ -72,7 +71,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Fish</td>
+                        <td class="tipo-receita">Fish</td>
                         <td>
                             <ul>
                                 <li>Bone Taco</li>
@@ -82,7 +81,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Brain</td>
+                        <td class="tipo-receita">Brain</td>
                         <td>
                             <ul>
                                 <li>Chunky Rice</li>
@@ -92,7 +91,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Fruit</td>
+                        <td class="tipo-receita">Fruit</td>
                         <td>
                             <ul>
                                 <li>Oily Raisins</li>
@@ -100,7 +99,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Milk</td>
+                        <td class="tipo-receita">Milk</td>
                         <td>
                             <ul>
                                 <li>Powdered Cheese</li>
@@ -109,7 +108,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Drink</td>
+                        <td class="tipo-receita">Drink</td>
                         <td>
                             <ul>
                                 <li>Hopi</li>
@@ -132,7 +131,7 @@
                         <th>Drink</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="tabela-combinacoes">
                     <tr class="item">
                         <td class="item2">Meat</td>
                         <td>Health +10</td>
@@ -207,21 +206,12 @@
             </table>
         </div>
 
-        <button onclick="receitaslista(2)" class="button-kitchen">
-            <h2>2 Felyne</h2>
-            <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-button">
-        </button>
         <div id="recipes2" style="display: none;">
-            <div class="anuncio pequeno">
-                <script type="text/javascript">
-                    atOptions = { 		'key' : 'befc87fedcf770ff4247d587db5d54cc', 		'format' : 'iframe', 		'height' : 50, 		'width' : 320, 		'params' : {} 	}; 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/befc87fedcf770ff4247d587db5d54cc/invoke.js"></scr' + 'ipt>'); 
-                </script>
-            </div>
-            <h2>Ingredientes</h2>
-            <table class="food">
+            <h2>2 Felyne</h2>
+            <table class="ingredientes-table">
                 <tbody class="receitas">
                     <tr>
-                        <td>Meat</td>
+                        <td class="tipo-receita">Meat</td>
                         <td>
                             <ul>
                                 <li>Cubesteak</li>
@@ -231,7 +221,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Veggies</td>
+                        <td class="tipo-receita">Veggies</td>
                         <td>
                             <ul>
                                 <li>Mild Herb</li>
@@ -242,7 +232,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Fish</td>
+                        <td class="tipo-receita">Fish</td>
                         <td>
                             <ul>
                                 <li>Snake Salmon</li>
@@ -251,7 +241,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Brain</td>
+                        <td class="tipo-receita">Brain</td>
                         <td>
                             <ul>
                                 <li>Hardtack</li>
@@ -260,7 +250,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Fruit</td>
+                        <td class="tipo-receita">Fruit</td>
                         <td>
                             <ul>
                                 <li>Fruity Jam</li>
@@ -269,7 +259,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Milk</td>
+                        <td class="tipo-receita">Milk</td>
                         <td>
                             <ul>
                                 <li>Aged Cheese</li>
@@ -278,7 +268,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Drink</td>
+                        <td class="tipo-receita">Drink</td>
                         <td>
                             <ul>
                                 <li>Furahiya Cola</li>
@@ -377,17 +367,489 @@
             </table>
         </div>
 
-        <button onclick="receitaslista(3)" class="button-kitchen">
+        <div id="recipes3" style="display: none;">
             <h2>3 Felyne</h2>
-            <img src="../galeria/icons/felyne-icon.png" alt="felyne" class="icon-button">
-        </button>
+            <table class="ingredientes-table">
+                <tbody class="receitas">
+                    <tr>
+                        <td class="tipo-receita">Meat</td>
+                        <td>
+                            <ul>
+                                <li>Great Mutton</li>
+                                <li>Juicy Rib Roast</li>
+                                <li>Meatwagon</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Veggies</td>
+                        <td>
+                            <ul>
+                                <li>Cudgel Onion</li>
+                                <li>Spicy Carrots</li>
+                                <li>Western Parsley</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Fish</td>
+                        <td>
+                            <ul>
+                                <li>Curved Shrimp</li>
+                                <li>Horseshoe Crab</li>
+                                <li>Spiky Blowfish</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Brain</td>
+                        <td>
+                            <ul>
+                                <li>Kut-ku Beans</li>
+                                <li>Tasty Rice</li>
+                                <li>Warwheat</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Fruit</td>
+                        <td>
+                            <ul>
+                                <li>Frozen Apples</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Milk</td>
+                        <td>
+                            <ul>
+                                <li>Buffafo Butter</li>
+                                <li>Chili Cheese</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Drink</td>
+                        <td>
+                            <ul>
+                                <li>Panish</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Combinações</h2>
+            <table class="food">
+                <thead>
+                    <tr>
+                        <th>- X -</th>
+                        <th>Meat</th>
+                        <th>Brain</th>
+                        <th>Fish</th>
+                        <th>Fruit</th>
+                        <th>Veggies</th>
+                        <th>Milk</th>
+                        <th>Drink</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-combinacoes">
+                    <tr class="item">
+                        <td class="item2">Meat</td>
+                        <td>Health +20</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Thunder Res+3</td>
+                        <td>Lrg Attk Boost</td>
+                        <td>Health +10 Sml Attk Boost</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Stamina -25</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Brain</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Stamina +25</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Stamina +50</td>
+                        <td>Defense +10 Stamina +25</td>
+                        <td>Defense +15 Water Res+3</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Fish</td>
+                        <td>Thunder res+3</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Sml Attak Boost</td>
+                        <td>Stamina +25 Fire Res+3</td>
+                        <td class="ruim">Health -30</td>
+                        <td>Health +30</td>
+                        <td class="ruim">Stamina -25</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Fruit</td>
+                        <td>Lrg Attk Boost</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Stamina +25 Fire Res+3</td>
+                        <td>Impossible</td>
+                        <td class="ruim">Health -30</td>
+                        <td class="ruim">health -20 Stamina -25</td>
+                        <td>Sml Attk Boost</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Veggies</td>
+                        <td>Health +10 Sml Attk Boost</td>
+                        <td>Stamina +50</td>
+                        <td class="ruim">Health -30</td>
+                        <td class="ruim">Health -30</td>
+                        <td>Defense +10</td>
+                        <td>Health +10 Defense +15</td>
+                        <td class="ruim">Nothing</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Milk</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Defense +10 Stamina +25</td>
+                        <td>Health +30</td>
+                        <td class="ruim">Health -20 Stamina -25</td>
+                        <td>Health +10 Defense +25</td>
+                        <td>Health +20 Ice Res+3</td>
+                        <td class="ruim">Nothing</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Drink</td>
+                        <td class="ruim">Stamina -25</td>
+                        <td>Defense +15 Water Res+3</td>
+                        <td class="ruim">Stamina -25</td>
+                        <td>Sml Attk Boost</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Impossible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="recipes4" style="display: none;">
+            <h2>4 Felyne</h2>
+            <table class="ingredientes-table">
+                <tbody class="receitas">
+                    <tr>
+                        <td class="tipo-receita">Meat</td>
+                        <td>
+                            <ul>
+                                <li>Dragon Foot</li>
+                                <li>Gator Ribmeat</li>
+                                <li>Princess Pork</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Veggies</td>
+                        <td>
+                            <ul>
+                                <li>Cannon Lettuce</li>
+                                <li>Rare Onion</li>
+                                <li>Scented Celery</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Fish</td>
+                        <td>
+                            <ul>
+                                <li>King Squid</li>
+                                <li>Queen Shrimp</li>
+                                <li>Pink Caviar</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Brain</td>
+                        <td>
+                            <ul>
+                                <li>Ancient Beans</li>
+                                <li>Kokoto Rice</li>
+                                <li>Megabagel</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Fruit</td>
+                        <td>
+                            <ul>
+                                <li>Burning Mango</li>
+                                <li>Lifejam</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Milk</td>
+                        <td>
+                            <ul>
+                                <li>Royale Cheese</li>
+                                <li>Kirin Cheese</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Drink</td>
+                        <td>
+                            <ul>
+                                <li>Blessed Wine</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Combinações</h2>
+            <table class="food">
+                <thead>
+                    <tr>
+                        <th>- X -</th>
+                        <th>Meat</th>
+                        <th>Brain</th>
+                        <th>Fish</th>
+                        <th>Fruit</th>
+                        <th>Veggies</th>
+                        <th>Milk</th>
+                        <th>Drink</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-combinacoes">
+                    <tr class="item">
+                        <td class="item2">Meat</td>
+                        <td>Health +30</td>
+                        <td class="ruim">Stamina -50</td>
+                        <td>Stamina +25 Water Res+5</td>
+                        <td>Sml Attk Boost Fire Res+3</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Health +40</td>
+                        <td>Defense +10 Ice Res+5</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Brain</td>
+                        <td class="ruim">Stamina -50</td>
+                        <td>Stamina +50</td>
+                        <td class="ruim">Health -30 Stamina -25</td>
+                        <td class="ruim">Health -40</td>
+                        <td>Sml Attk Boost Stamina +25</td>
+                        <td>Health +30 Sml Attk Boost</td>
+                        <td class="ruim">Nothing</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Fish</td>
+                        <td>Stamina +25 Water Res+5</td>
+                        <td class="ruim">Health -30 Stamina -25</td>
+                        <td>Lrg Attk Boost</td>
+                        <td>Defense +20</td>
+                        <td>Health +20 Dragon Res+3</td>
+                        <td>Defense +10 Thunder Res+5</td>
+                        <td class="ruim">Nothing</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Fruit</td>
+                        <td>Sml Attk Boost Fire Res+3</td>
+                        <td class="ruim">Health -40</td>
+                        <td>Defense +20</td>
+                        <td>Lrg Attk Boost Health +10</td>
+                        <td>Stamina +50</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Health +20 Defense +15</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Veggies</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Sml Attk Boost Stamina +25</td>
+                        <td>Health +20 Dragon Res+3</td>
+                        <td>Stamina +50</td>
+                        <td>Defense +15</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Health +40</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Milk</td>
+                        <td>Health +40</td>
+                        <td>Health +30 Sml Attk Boost</td>
+                        <td>Defense +10 Thunder Res+5</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Impossible</td>
+                        <td>Health +20 Stamina +25</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Drink</td>
+                        <td>Defense +10 Ice Res+5</td>
+                        <td class="ruim">Nothing</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Health +20 Defense +15</td>
+                        <td>Health +40</td>
+                        <td>Health +20 Stamina +25</td>
+                        <td class="ruim">Impossible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="recipes5" style="display: none;">
+            <h2>5 Felyne</h2>
+            <table class="ingredientes-table">
+                <tbody class="receitas">
+                    <tr>
+                        <td class="tipo-receita">Meat</td>
+                        <td>
+                            <ul>
+                                <li>Bigmeat</li>
+                                <li>Dragon Head</li>
+                                <li>Dragon Tail</li>
+                                <li>King Turkey</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Veggies</td>
+                        <td>
+                            <ul>
+                                <li>Demonshroom</li>
+                                <li>Fatty Tomato</li>
+                                <li>King Truffle</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Fish</td>
+                        <td>
+                            <ul>
+                                <li>1000-year Crab</li>
+                                <li>Crimson Seabream</li>
+                                <li>Hairy Tuna</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Brain</td>
+                        <td>
+                            <ul>
+                                <li>Gold Rice</li>
+                                <li>Heaven Bread</li>
+                                <li>Soul Beans</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Fruit</td>
+                        <td>
+                            <ul>
+                                <li>Emerald Durian</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Milk</td>
+                        <td>
+                            <ul>
+                                <li>Kirin Cheese</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-receita">Drink</td>
+                        <td>
+                            <ul>
+                                <li>Goldenfish Brew</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Combinações</h2>
+            <table class="food">
+                <thead>
+                    <tr>
+                        <th>- X -</th>
+                        <th>Meat</th>
+                        <th>Brain</th>
+                        <th>Fish</th>
+                        <th>Fruit</th>
+                        <th>Veggies</th>
+                        <th>Milk</th>
+                        <th>Drink</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-combinacoes">
+                    <tr class="item">
+                        <td class="item2">Meat</td>
+                        <td>Health +30</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Health +20 Stamina +50</td>
+                        <td class="ruim">Health -40 Stamina -25</td>
+                        <td>Health +40 Lrg Attk Boost</td>
+                        <td>Stamina +25 Defense +15</td>
+                        <td>Sml Attk Boost Fire Res+5</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Brain</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Stamina +50</td>
+                        <td>Health +40 Defense +20</td>
+                        <td>Health +30 Stamina +25</td>
+                        <td>Sml Attk Boost Stamina +25</td>
+                        <td class="ruim">Health -50</td>
+                        <td class="ruim">Health -20 Water Res+5</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Fish</td>
+                        <td>Health +20 Stamina +50</td>
+                        <td>Health +40 Defense +20</td>
+                        <td>Lrg Attk Boost</td>
+                        <td>Stamina +50 Defense +10</td>
+                        <td>Defense +10 Ice Res+5</td>
+                        <td>Defense +10 Ice Res+5</td>
+                        <td class="ruim">Nothing</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Fruit</td>
+                        <td class="ruim">Health -40 Stamina -25</td>
+                        <td>Health +30 Stamina +25</td>
+                        <td>Stamina +50 se +10</td>
+                        <td class="ruim">Impossible</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Health +50 Dragon Res+5</td>
+                        <td>Sml Attk Boost Thunder Res+5</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Veggies</td>
+                        <td>Health +40 Lrg Attk Boost</td>
+                        <td>Sml Attk Boost Stamina +25</td>
+                        <td>Defense +10 Ice Res+5</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Defense +15</td>
+                        <td>Stamina +25 Defense +20</td>
+                        <td class="ruim">Stamina -50</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Milk</td>
+                        <td>Stamina +25 Defense +15</td>
+                        <td class="ruim">Health -50</td>
+                        <td>Defense +10 Ice Res+5</td>
+                        <td>Health +50 Dragon Res+5</td>
+                        <td>Stamina +25 Defense +20</td>
+                        <td class="ruim">Impossible</td>
+                        <td>Health +50 Stamina +50</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="item2">Drink</td>
+                        <td>Sml Attk Boost Fire Res+5</td>
+                        <td class="ruim">Health -20 Water Res+5</td>
+                        <td class="ruim">Nothing</td>
+                        <td>Sml Attk Boost Thunder Res+5</td>
+                        <td class="ruim">Stamina -50</td>
+                        <td>Health +50 Stamina +50</td>
+                        <td class="ruim">Imposible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <div class="anuncio pequeno">
-        <script type="text/javascript">
-            atOptions = { 		'key' : 'befc87fedcf770ff4247d587db5d54cc', 		'format' : 'iframe', 		'height' : 50, 		'width' : 320, 		'params' : {} 	}; 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/befc87fedcf770ff4247d587db5d54cc/invoke.js"></scr' + 'ipt>'); 
-        </script>
-    </div>
+    <img src="../galeria/kitchen/chef.png" alt="" id="felyne-img" class="img-felyne-cat">
 
 
     <footer>

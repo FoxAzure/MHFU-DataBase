@@ -10,9 +10,9 @@ var monstros = [
         icon: "FrontierGen-Anteka_Icon.png",
         img: "",
         tipo: 1,
-    }
+    },
     {
-        nome: "Anteka",
+        nome: "Vespoid",
         icon: "FrontierGen-Kelbi_Icon.png",
         img: "",
         tipo: 2,
@@ -46,20 +46,15 @@ function carregar(){
     icone.src = "../galeria/monster/icons/" + monstros[0].icon;
     document.getElementById('quest-objective').innerHTML = objetivo;
 
+
+    monstros.filter((jogo === 1) => {
+        alert(jogo.tipo);
+    });
+
+
+    //monstros.forEach((jogo) => {
+        //alert(jogo.tipo);
+    //});
 }
 
-
-const carros = [
-    { marca: 'Fiat', modelo: 'Uno', anoFabricacao: 2015 },
-    { marca: 'GM', modelo: 'Onix', anoFabricacao: 2018 },
-    { marca: 'Ford', modelo: 'KA+', anoFabricacao: 2018 },
-    { marca: 'Fiat', modelo: 'Cronos', anoFabricacao: 2020 },
-  ];
-
-  function retornarCarroFiat(carro) {
-    return (carro.marca == 'Fiat');
-    
-  }
-
-  const carrosFiat = carros.filter( retornarCarroFiat );
 

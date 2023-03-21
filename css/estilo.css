@@ -4,10 +4,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     text-decoration: none;
+    box-sizing:border-box;
 }
 
 body{
-    background-color: rgb(187, 164, 137);
+    /*background-color: rgb(187, 164, 137);*/
     width: 100%;
 }
 
@@ -28,17 +29,20 @@ footer{
 header{
     width: 100%;
     height: 200px;
-    background-image: url("../galeria/backgrounds/banner-top.webp");
+    background-image: url("../galeria/backgrounds/banner-top2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 h1{
     color: white;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.753);
+    background-color: rgb(114, 66, 3);
+    padding: 5px;
+    width: 100%;
 }
 
 .menu{
@@ -72,11 +76,10 @@ li.navegador{
 
 .item-menu{
     
-    background-color: brown;
+    background-color: rgb(134, 84, 37);
     color: white;
-    padding: 15px 25px;
-    border: 3px solid rgb(110, 9, 9);
-    border-radius: 25px;
+    padding: 5px 10px;
+    border: 3px solid rgba(99, 57, 2, 0.856);
     font-size: 15pt;
     text-decoration: none;
     width: 200px;
@@ -103,9 +106,28 @@ li.navegador{
 }
 
 
+.secao-textos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+.secao-textos div p{
+    width: 80%;
+    margin: 15px;
 
+}
+.img-home{
+    width: 50%;
+    height: 100%;
+}
 
-
+.img-home2{
+    width: 80%;
+    margin: 25px auto;
+}
 
 
 
@@ -145,7 +167,58 @@ li{
     border: 1px solid black;
     writing-mode: vertical-lr;
     padding: 10px 0;
+    font-size: 14pt;
 }
+
+
+
+
+.item2{
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: rgba(122, 255, 211, 0.616);
+}
+.ruim{
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+
+table.food {
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+ }
+ 
+ .food td, .food th {
+    padding: 10px;
+    position: relative;
+ }
+ 
+ .food tr:hover{
+    background-color: rgba(218, 191, 70, 0.3);
+ }
+
+.food td:hover::after,.food th:hover::after { 
+    background-color: rgba(218, 191, 70, 0.3);
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+ }
+
+ td.item2:hover::after,th:hover::after { 
+    /*background-color: rgba(2, 148, 27, 0.5);*/
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;   
+ }
+
 
 @media only screen and (min-width: 800px){
     .food .item td{
@@ -156,16 +229,9 @@ li{
     }
 }
 
-.item2{
-    font-weight: bold;
-    font-size: 14pt;
-    background-color: aquamarine;
-}
 
-.ruim{
-    background-color: rgb(182, 11, 20);
-    color: white;
-}
+
+
 
 
 

@@ -1,0 +1,39 @@
+.new-felynes{
+    display: flex;
+}
+
+.new-felynes-bt{
+    margin: 10px 0;
+    padding: 5px 25px;
+    width: 100%;
+    border: none;
+    background-color: rgb(134, 84, 37);
+    border-top: 3px solid rgba(99, 57, 2, 0.856);
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.icon-felyne-bt{
+    width: 60px;
+    margin: 3px;
+}
+
+.img-felyne-cat{
+    width: 130px;
+    margin: 10px auto;
+}
+
+.ingredientes-table{
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+.ingredientes-table tr td{
+    border: 1px solid black;
+    padding: 5px;
+}
+.tipo-receita{
+    font-weight: bold;
+    width: 90px;
+}

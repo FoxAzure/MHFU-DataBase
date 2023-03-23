@@ -29,147 +29,127 @@
         </ul>
     </nav>
 
-
-    <img src="../galeria/quests/PokkeChief.png" alt="PokkeChief">
+    <div class="new-quest">
+        <button class="new-quest-bt" id="bt-quest1" onclick="questlista(1)">1★</button>
+        <button class="new-quest-bt" id="bt-quest2" onclick="questlista(2)">2★</button>
+        <button class="new-quest-bt" id="bt-quest3">3★</button>
+        <button class="new-quest-bt" id="bt-quest4">4★</button>
+        <button class="new-quest-bt" id="bt-quest5">5★</button>
+    </div>
 
     
 
-    <button onclick="questlista(1)" class="bt-quest">
-        <h2>1★ Village Quest</h2>
-    </button>
-    <table class="quests" id="star1" style="display: none;">
-        <thead>
-            <tr>
-                <th class="n-quest">Nº</th>
-                <th class="obj-quest">Objetive</th>
-                <th class="reward-quest">Reward</th>
-                <th class="area-quest">Area</th>
-                <th class="note-quest">Note</th>
-            </tr>
-        </thead>
-        <tbody>
-            <a href="./quest.html"></a>
-                <tr onclick="paginaquest()">
-                    <td>
-                        01
-                    </td>
-                    <td>
-                        <ul>
-                            <li>5 Mountain Herbs</li>
-                        </ul>
-                    </td>
-                    <td>
-                        300 z
-                    </td>
-                    <td>
-                        <img src="../galeria/areas/icons/snowymountains.png" alt="snowymountains" class="icon-area">
-                    </td>
-                    <td></td>
-                    
-                </tr>
-            </a>
-            <a href="quest.html">
-                <tr>
-                    <td>
-                        02
-                    </td>
-                    <td>
-                        <ul>
-                            <li>3 Anteka Antlers</li>
-                        </ul>
-                    </td>
-                    <td>
-                        300 z
-                    </td>
-                    <td>
-                        <img src="../galeria/areas/icons/snowymountains.png" alt="snowymountains" class="icon-area">
-                    </td>
-                    <td></td>
-                </tr>
-            </a>
-            <a href="quest.html">
-                <tr>
-                    <td>
-                        03
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Slay 5 Giaprey</li>
-                        </ul>
-                    </td>
-                    <td>
-                        300 z
-                    </td>
-                    <td>
-                        <img src="../galeria/areas/icons/snowymountains.png" alt="snowymountains" class="icon-area">
-                    </td>
-                    <td>Key Quest</td>
-                </tr>
-            </a>
-            <a href="quest.html">
-                <tr>
-                    <td>
-                        04
-                    </td>
-                    <td>
-                        <ul>
-                            <li>3 Popo Tongues</li>
-                        </ul>
-                    </td>
-                    <td>
-                        300 z
-                    </td>
-                    <td>
-                        <img src="../galeria/areas/icons/snowymountains.png" alt="snowymountains" class="icon-area">
-                    </td>
-                    <td>Key Quest</td>
-                </tr>
-            </a>
-            <a href="quest.html">
-                <tr>
-                    <td>
-                        05
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Slay 3 Blangos</li>
-                        </ul>
-                    </td>
-                    <td>
-                        300 z
-                    </td>
-                    <td>
-                        <img src="../galeria/areas/icons/snowymountains.png" alt="snowymountains" class="icon-area">
-                    </td>
-                    <td>Key Quest</td>
-                </tr>
-            </a>
-            <a href="quest.html">
-                <tr class="urgent-quest">
-                    <td>
-                        06
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Hunt the Giadrome</li>
-                        </ul>
-                    </td>
-                    <td>
-                        300 z
-                    </td>
-                    <td>
-                        <img src="../galeria/areas/icons/snowymountains.png" alt="snowymountains" class="icon-area">
-                    </td>
-                    <td>Urgent Quest</td>
-                </tr>
-            </a>
-        </tbody>
-    </table>
+    <div class="lista-quest" id="star1" style="display: none">
 
-    <button onclick="questlista(2)" class="bt-quest">
-        <h2>2★ Village Quest</h2>
-    </button>
+        <div class="card-quest">
+            <div class="descr">
+                <p class="class-quest">Optional Quest</p>
+                <img src="../galeria/monster/icons/FrontierGen-Popo_Icon.png" alt="" class="icon-quest">
+                <p><span>Objetivo:</span> Deliver 5 Mountain Herbs</p>
+                <p><span>Monstros:</span> Popo, Anteka</p>
+            </div>
+            <div class="info">
+                <p><span>Location:</span> Snowy Mountains (Day)</p>
+                <p><span>Reward:</span> 300 z</p>
+                <p><span>Contract Fee:</span> 0 z</p>
+                <p><span>Time Limit:</span> 50 mins</p>
+                <p><span>Environment:</span> Stable</p>
+                <p><span>HR Points:</span> ? Pts</p>
+                <p><span>Requirement:</span></p>
+            </div>
+            <div class="notes">
+                <p>Notas:</p>
+            </div>
+        </div>
+
+        <div class="card-quest">
+            <div class="descr">
+                <p class="class-quest key">Key Quest</p>
+                <img src="../galeria/monster/icons/FrontierGen-Blango_Icon.png" alt="" class="icon-quest">
+                <p><span>Objetivo:</span> Deliver 3 Anteka Antlers</p>
+                <p><span>Mosnter:</span> Anteka, Popo</p>
+            </div>
+            <div class="info">
+                <p><span>Location:</span> Snowy Mountains (Day)</p>
+                <p><span>Reward:</span> 300 z</p>
+                <p><span>Contract Fee:</span> 0 z</p>
+                <p><span>Time Limit:</span> 50 mins</p>
+                <p><span>Environment:</span> Stable</p>
+                <p><span>HR Points:</span> ? Pts</p>
+                <p><span>Requirement:</span></p>
+            </div>
+            <div class="notes">
+                <p>Notas:</p>
+            </div>
+        </div>
+
+        <div class="card-quest">
+            <div class="descr">
+                <p class="class-quest key">Key Quest</p>
+                <img src="../galeria/monster/icons/MH10th-Giadrome_Icon.png" alt="" class="icon-quest">
+                <p><span>Objetivo:</span> Deliver 3 Anteka Antlers</p>
+                <p><span>Mosnter:</span> Anteka, Popo</p>
+            </div>
+            <div class="info">
+                <p><span>Location:</span> Snowy Mountains (Day)</p>
+                <p><span>Reward:</span> 300 z</p>
+                <p><span>Contract Fee:</span> 0 z</p>
+                <p><span>Time Limit:</span> 50 mins</p>
+                <p><span>Environment:</span> Stable</p>
+                <p><span>HR Points:</span> ? Pts</p>
+                <p><span>Requirement:</span></p>
+            </div>
+            <div class="notes">
+                <p>Notas:</p>
+            </div>
+        </div>
+
+        <div class="card-quest">
+            <div class="descr">
+                <p class="class-quest key">Key Quest</p>
+                <img src="../galeria/monster/icons/FrontierGen-Velocidrome_Icon.png" alt="" class="icon-quest">
+                <p><span>Objetivo:</span> Deliver 3 Anteka Antlers</p>
+                <p><span>Mosnter:</span> Anteka, Popo</p>
+            </div>
+            <div class="info">
+                <p><span>Location:</span> Snowy Mountains (Day)</p>
+                <p><span>Reward:</span> 300 z</p>
+                <p><span>Contract Fee:</span> 0 z</p>
+                <p><span>Time Limit:</span> 50 mins</p>
+                <p><span>Environment:</span> Stable</p>
+                <p><span>HR Points:</span> ? Pts</p>
+                <p><span>Requirement:</span></p>
+            </div>
+            <div class="notes">
+                <p>Notas:</p>
+            </div>
+        </div>
+
+        <div class="card-quest">
+            <div class="descr">
+                <p class="class-quest urgent">Urgent Quest</p>
+                <img src="../galeria/monster/icons/FrontierGen-Rathian_Icon.png" alt="" class="icon-quest">
+                <p><span>Objetivo:</span> Deliver 3 Anteka Antlers</p>
+                <p><span>Mosnter:</span> Anteka, Popo</p>
+            </div>
+            <div class="info">
+                <p><span>Location:</span> Snowy Mountains (Day)</p>
+                <p><span>Reward:</span> 300 z</p>
+                <p><span>Contract Fee:</span> 0 z</p>
+                <p><span>Time Limit:</span> 50 mins</p>
+                <p><span>Environment:</span> Stable</p>
+                <p><span>HR Points:</span> ? Pts</p>
+                <p><span>Requirement:</span></p>
+            </div>
+            <div class="notes">
+                <p>Notas:</p>
+            </div>
+        </div>
+
+    </div>
+
     <table class="quests" id="star2" style="display: none;">
+        <caption>Low Rank 2★</caption>
         <thead>
             <tr>
                 <th class="n-quest">Nº</th>
@@ -297,6 +277,7 @@
         </tbody>
     </table>
 
+    <img src="../galeria/quests/PokkeChief.png" alt="PokkeChief" id="quest-img">
 
     <footer>
         <p>Paulo Roberto - 2023</p>

@@ -49,3 +49,77 @@
     cursor: pointer;
 
 }
+
+
+
+.new-quest{
+    display: flex;
+}
+
+.new-quest-bt{
+    margin: 5px 0;
+    padding: 5px 15px;
+    width: 100%;
+    border: none;
+    background-color: rgb(134, 84, 37);
+    border-top: 3px solid rgba(99, 57, 2, 0.856);
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.quest-img{
+    width: 130px;
+    margin: 10px auto;
+}
+
+
+.card-quest{
+    width: 95%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+.card-quest .descr{
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+}
+span{
+    font-weight: bold;
+}
+.card-quest .info{
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.info p{
+    text-align: left;
+}
+.card-quest .notes{
+    width: 100%;
+    border: 1px solid black;
+}
+.notes p{
+    width: 100%;
+    text-align: left;
+}
+.icon-quest{
+    width: 70px;
+}
+
+.class-quest{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+
+.key{
+    background-color: rgb(15, 116, 2);
+    color: white;
+}
+.urgent{
+    background-color: rgb(156, 26, 3);
+    color: white;
+}

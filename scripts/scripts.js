@@ -23,10 +23,19 @@ function receitaslista(receita){
 function questlista(star){
     let verificar = document.getElementById("star"+star).style.display
 
+    for(let i=1;i<=2;i++){
+        document.getElementById("star"+i).style.display = "none";
+        document.getElementById("bt-quest"+i).style.backgroundColor  = "rgb(134, 84, 37)";
+    }
+
     if(verificar==="none"){
         document.getElementById("star"+star).style.display = "block";
+        document.getElementById("bt-quest"+star).style.backgroundColor  = "white";
+        document.getElementById("quest-img").style.display = "none";
     }else{
         document.getElementById("star"+star).style.display = "none";
+        document.getElementById("bt-quest"+star).style.backgroundColor  = "rgb(134, 84, 37)";
+        document.getElementById("quest-img").style.display = "block";
     }
 
     
